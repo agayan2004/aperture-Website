@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    transition: 0.5s;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: gray;
+}
+body {
+    background-color: black;
+}
+header {
+    height: 100vh;
+    background-image: url(images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navbar {
+    background: #181818;
+    padding: 20px 0 10px 0;
+}
+#navbar > div {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar-links a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+#navbar-links a:hover {
+    color: gray;
+}
+#navbar-links ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    display: none;
+}
+#drpdow {
+    color: white;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    background-color: #181818;
+    display: block;
+    margin-left: -100px;
+    margin-top: 10px;
+}
+.dropdown-content ul {
+    padding: 0;
+}
+.dropdown-content ul li a{
+    color: white;
+    font-size: 15px;
+}
+.dropdown-content  a{
+    text-decoration: none;
+}
+#getdrp {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#header-text {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    color:  #C0C0C0;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+#h-child1 > h2{
+    font-size: 54px;
+    margin: 5px;
+}
+#h-child1 {
+    width: 50%;
+    margin: auto;
+}
+section {
+    background: #000;
+    padding: 50px;
+    color: white;
+}
+section > h2 {
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+}
+section > p {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+}
+#header-location {
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+}
+#header-location ul {
+    padding: 0;
+}
+#header-location   li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-right: 10px;
+    font-size: 15px;
+}
+#sectionImgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#sectionImgs > div{
+    width:  500px;
+    padding: 20px;
+    padding-top: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+#secImgText {
+    width: 100%;
+}
+#secImgText button {
+    padding: 5px 10px;
+    background-color: white;
+    color: #000;
+    border-radius: 15px;
+}
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: .5;
+}
+input[type=checkbox]:hover {
+    opacity: 1;
+}
+input[type=checkbox]:checked {
+    background-color: #000 !important;
+    opacity: 1;
+}
+#mount {
+    height: 80vh;
+    padding: 80px 30px 20px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+#mountText {
+    width: 40%;
+    padding: 20px;
+    color: white;
+}
+#mountText p {
+    margin-bottom: 80px;
+    font-size: 14px;
+    color: #C0C0C0;
+}
+#mountText ul {
+    padding: 0;
+}
+#mountText  li {
+    display: inline;
+    margin-right: 10px;
+}
+#mountText > div {
+    text-align: right;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav-child1 {
+    width: 50%;
+    padding: 150px 50px;
+    background: #000;
+}
+#nav-child2 {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/IMAGE6.png); 
+    padding: 500px 10px 10px 450px;
+}
+#navimg {
+    margin: auto;
+    width: 70%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+#navimg  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+#navimg  h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: white;
+}
+#navimg  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+#navimg button {
+    padding: 5px 10px;
+    background-color: white;
+    color: #000;
+    border-radius: 15px;
+}
+#navIcons li {
+    font-size: 14px;
+    display: inline;
+    margin-right: 10px;
+    color: white;
+}
+#navIcons ul {
+    padding: 0;
+}
+main {
+    padding: 100px 10px;
+    text-align: center;
+    color: white;
+    background: #000;
+}
+main h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+}
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #C0C0C0;
+    display: inline;
+}
+main ul {
+    padding: 0;
+    padding-top: 60px;
+}
+main li {
+    margin-right: 70px;
+    display: inline;
+}
+main button {
+    padding: 5px 10px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+#footerConteiner {
+    width: 90%;
+    margin: auto;
+}
+footer {
+    background-color: #000;
+    padding: 30px 0;
+}
+#footerConteiner > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#footerLinks p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+    margin-top: 20px;
+}
+#footerLinks li {
+    line-height: 30px;
+}
+footer a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+footer a:hover {
+    color: gray;
+}
+#nthchild2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#footerSearch {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+#footerSearch > div {
+    margin: 5px;
+}
+#footerSearch h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+#footerSearch p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+#search {
+    width: 400px;
+    height: 45px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+}
+#search #input {
+    width: 70%;
+    height: 100%;
+}
+#search #button {
+    width: 30%;
+    height: 100%;
+    padding: 10px 20px;
+}
+#search #input input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+#search #button button {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+#search #input input:checked {
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    border: 1px solid gray;
+}
+#footerIcons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+#footerIcons p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+#Ficons ul {
+    padding: 0;
+}
+#Ficons li {
+    margin-right: 20px;
+    display: inline;
+}
+@media screen and (max-width: 1200px) {	
+    #mountText p {
+        margin-bottom: 50px;
+    }
+   #nav-child1 {
+    padding: 80px 50px;
+   }
+   #nav-child2 {
+    padding: 365px 10px 10px 200px;
+   }
+}
+@media screen and (max-width: 992px) {	
+    #navbar > div {
+        width: 96%;
+    }
+    #sectionImgs > div{
+        width: 90%;
+    }
+    #h-child1 {
+        width: 80%;
+    }
+    #h-child1 p {
+        margin: 1px;
+    }
+    #header-text {
+        padding: 10px;
+    }
+    #mount { 
+        height: 70vh;
+        padding: 50px 10px 10px 10px;
+    }
+    #mountText p {
+        margin-bottom: 10px;
+    }
+    #mountText {
+        text-align: center;
+        width: 70%;
+    }
+    #mountText  li {
+        margin-right: 5px;
+    }
+    #nav-child2 {
+        padding: 365px 10px 10px 90px;
+    }
+    #nav-child1 {
+        padding: 68px 0px;
+    }
+    #footerConteiner {
+        width: 96%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dropdown {
+        display: block;
+    }
+    #navbar-links {
+        display: none;
+    }
+    #header-text div {
+        width: 100%;
+    }
+    #getdrp {
+        width: 100%;
+        padding: 3px 0;
+    }
+    #header-text {
+        padding: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+    #sectionImgs > div{
+        padding-top: 100px;
+        width: 90%;
+    }
+    #h-child1 {
+        width: 90%;
+    }
+    #h-child1 p {
+        margin: 1px;
+    }
+    #mount { 
+        height: 80vh;
+        padding: 50px 10px 10px 10px;
+    }
+    #mountText p {
+        margin-bottom: 10px;
+    }
+    #mountText {
+        text-align: center;
+        width: 100%;
+    }
+    #mountText  li {
+        margin-right: 5px;
+    }
+    #nav-child2 {
+        width: 100%;
+    }
+    #nav-child1 {
+        width: 100%;
+    }
+    #nav-child2 {
+        padding: 280px 10px 10px 0px;
+    }
+    #h-child1 p {
+        font-size: 15px;
+    }
+    #h-child1 > h2 {
+        font-size: 30px;
+    }
+    #header-text {
+        padding: 0px;
+    }
+    dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    #footerConteiner > div {
+        justify-content: center;
+    }
+    #footerConteiner {
+        width: 98%;
+    }
+    #search {
+        width: 90%;
+        height: 40px;
+    }
+    main li {
+        line-height: 70px;
+        margin-right: 15px;
+    }
+    main {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
